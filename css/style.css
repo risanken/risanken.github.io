@@ -88,6 +88,9 @@ h1, h2 {
   display: flex;
   gap: 1em;
   margin-bottom: 1.5em;
+  /* 角を少し丸めて余白も追加するとさらに見やすく */
+  padding: 0.7em 1em;
+  border-radius: 8px;
 }
 
 .speaker-name {
@@ -106,12 +109,6 @@ h1, h2 {
 }
 .speaker:nth-child(odd) {
   background: #ffffff;
-}
-
-/* 角を少し丸めて余白も追加するとさらに見やすく */
-.speaker {
-  padding: 0.7em 1em;
-  border-radius: 8px;
 }
 
 /* ホバー時のボタンの色を変更 */
