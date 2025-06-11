@@ -16,6 +16,14 @@ body {
   color: #333;
   line-height: 1.6;
   font-size: 1.1em;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* ページ全体の横スクロール防止 */
+html {
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 header, footer {
@@ -78,16 +86,16 @@ h1, h2 {
 .speaker {
   display: flex;
   gap: 1em;
-  margin-bottom: 0.5em;
+  margin-bottom: 1.5em;
 }
 
 .speaker-name {
-  width: 180px; /* 必要に応じて調整 */
+  width: 360px; /* 必要に応じて調整 */
   flex-shrink: 0;
 }
 
 .speak-title {
-  width: 1300px; /* 必要に応じて調整 */
+  width: 760px; /* 必要に応じて調整 */
   flex-shrink: 0;
 }
 
