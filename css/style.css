@@ -1,12 +1,12 @@
 :root {
-  --main-color: #004080;
-  --accent-color: #007acc;
-  --bg-color: #f9f9f9;
-  --font-family: 'Helvetica Neue', sans-serif;
+    --main-color: #004080;
+    --accent-color: #007acc;
+    --bg-color: #f9f9f9;
+    --font-family: 'Helvetica Neue', sans-serif;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -15,6 +15,7 @@ body {
   background-color: var(--bg-color);
   color: #333;
   line-height: 1.6;
+  font-size: 1.1em;
 }
 
 header, footer {
@@ -40,7 +41,7 @@ header, footer {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1200px;
   margin: auto;
   padding: 1em;
 }
