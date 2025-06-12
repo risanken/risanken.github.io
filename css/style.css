@@ -87,10 +87,10 @@ h1, h2 {
 .speaker {
   display: flex;
   gap: 1em;
-  margin-bottom: 1.5em;
+  /* margin-bottom: 1.5em; */
   /* Šp‚ğ­‚µŠÛ‚ß‚Ä—]”’‚à’Ç‰Á‚·‚é‚Æ‚³‚ç‚ÉŒ©‚â‚·‚­ */
   padding: 0.7em 1em;
-  border-radius: 8px;
+  /* border-radius: 8px; */
 }
 
 .speaker-name {
