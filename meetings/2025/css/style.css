@@ -82,6 +82,26 @@ h1, h2 {
   border-radius: 5px;
 }
 
+/* アクセス情報のレイアウト */
+.access-flex {
+  display: flex;
+  gap: 2em;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.access-map {
+  flex: 1 1 300px;
+  min-width: 250px;
+  max-width: 600px;
+}
+
+.access-text {
+  flex: 1 1 200px;
+  min-width: 200px;
+  max-width: 600px;
+}
+
 /* 講演者リストに関するものたち */
 .speaker-list {
   display: flex;
@@ -91,7 +111,7 @@ h1, h2 {
 }
 
 .speaker {
-  display: flex;
+  display: block;
   gap: 1em;
   margin-bottom: 1.5em;
   /* 角を少し丸めて余白も追加するとさらに見やすく */
@@ -107,6 +127,22 @@ h1, h2 {
 .speak-title {
   width: 760px; /* 必要に応じて調整 */
   flex-shrink: 0;
+}
+
+/* 名前とタイトルだけ横並びに */
+.speaker-row {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+/* 講演リストの詳細に関するもの */
+.speak-detail {
+  margin-top: 0.5em;
+  padding: 0.7em 1em;
+  background: #f8f8f8;
+  border-left: 4px solid #b5e1f0;
+  display: none;
 }
 
 /* 1つおきに背景色を変える */
@@ -143,7 +179,7 @@ h1, h2 {
 
 /* 以下モバイル向けのレスポンシブ設定 */
 @media (max-width: 600px) {
-    body {
+  body {
         font-size: 90%;
     }
 
@@ -159,4 +195,11 @@ h1, h2 {
     .speak-title {
         width: 100%;
     }
+  .access-flex {
+    flex-direction: column;
+  }
+  .access-map, .access-text {
+    max-width: 100%;
+  }
 }
+
