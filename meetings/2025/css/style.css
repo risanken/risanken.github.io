@@ -138,6 +138,7 @@ h1, h2 {
   display: flex;
   gap: 1em;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 /* u‰‰ƒŠƒXƒg‚ÌÚ×‚ÉŠÖ‚·‚é‚à‚Ì */
@@ -190,15 +191,18 @@ h1, h2 {
     .card {
         padding: 1em 0.8em;
     }
-    .speaker {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .speaker-name,
-    .speak-title {
-        width: 100%;
-    }
+  .speaker-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2em;
+  }
+  .speaker-name,
+  .speaker-time,
+  .speak-title {
+    width: 100%;
+    min-width: 0;
+    word-break: break-all;
+  }
   .access-flex {
     flex-direction: column;
   }
