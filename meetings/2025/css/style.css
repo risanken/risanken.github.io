@@ -138,7 +138,7 @@ h1, h2 {
   display: flex;
   gap: 1em;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 /* u‰‰ƒŠƒXƒg‚ÌÚ×‚ÉŠÖ‚·‚é‚à‚Ì */
