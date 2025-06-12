@@ -104,12 +104,12 @@ h1, h2 {
 }
 
 /* 1つおきに背景色を変える */
-.speaker:nth-child(even) {
+/* .speaker:nth-child(even) {
   background: #b5e1f0;
 }
 .speaker:nth-child(odd) {
   background: #ffffff;
-}
+} */
 
 /* ホバー時のボタンの色を変更 */
 
