@@ -207,7 +207,9 @@ h1, h2 {
     flex-direction: column;
   }
   .access-map, .access-text {
-    max-width: 100%;
+    /* max-width: 100%; */
+    width: 100%;
+    min-width: 0;
   }
 }
 
