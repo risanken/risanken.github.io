@@ -89,17 +89,18 @@ h1, h2 {
   gap: 1em;
   /* margin-bottom: 1.5em; */
   /* 角を少し丸めて余白も追加するとさらに見やすく */
-  padding: 0.7em 1em;
+  padding: 0.15em 1em;
   /* border-radius: 8px; */
+  align-items: center; /* 子要素を縦方向中央揃え */
 }
 
 .speaker-name {
-  width: 360px; /* 必要に応じて調整 */
+  width: 200px; /* 必要に応じて調整 */
   flex-shrink: 0;
 }
 
 .speak-title {
-  width: 760px; /* 必要に応じて調整 */
+  width: 1000px; /* 必要に応じて調整 */
   flex-shrink: 0;
 }
 
