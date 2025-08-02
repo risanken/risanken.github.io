@@ -20,7 +20,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ƒy[ƒW‘S‘Ì‚Ì‰¡ƒXƒNƒ[ƒ‹–h~ */
+/* ï¿½yï¿½[ï¿½Wï¿½Sï¿½Ì‚Ì‰ï¿½ï¿½Xï¿½Nï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½hï¿½~ */
 html {
   max-width: 100vw;
   overflow-x: hidden;
@@ -82,7 +82,7 @@ h1, h2 {
   border-radius: 5px;
 }
 
-/* ƒAƒNƒZƒXî•ñ‚ÌƒŒƒCƒAƒEƒg */
+/* ï¿½Aï¿½Nï¿½Zï¿½Xï¿½ï¿½ï¿½Ìƒï¿½ï¿½Cï¿½Aï¿½Eï¿½g */
 .access-flex {
   display: flex;
   gap: 2em;
@@ -102,7 +102,7 @@ h1, h2 {
   max-width: 600px;
 }
 
-/* u‰‰ÒƒŠƒXƒg‚ÉŠÖ‚·‚é‚à‚Ì‚½‚¿ */
+/* ï¿½uï¿½ï¿½ï¿½Òƒï¿½ï¿½Xï¿½gï¿½ÉŠÖ‚ï¿½ï¿½ï¿½ï¿½ï¿½Ì‚ï¿½ï¿½ï¿½ */
 .speaker-list {
   display: flex;
   flex-direction: column;
@@ -114,26 +114,26 @@ h1, h2 {
   display: block;
   gap: 1em;
   /* margin-bottom: 1.5em; */
-  /* Šp‚ğ­‚µŠÛ‚ß‚Ä—]”’‚à’Ç‰Á‚·‚é‚Æ‚³‚ç‚ÉŒ©‚â‚·‚­ */
+  /* ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Û‚ß‚Ä—]ï¿½ï¿½ï¿½ï¿½ï¿½Ç‰ï¿½ï¿½ï¿½ï¿½ï¿½Æ‚ï¿½ï¿½ï¿½ÉŒï¿½ï¿½â‚·ï¿½ï¿½ */
   padding: 0.7em 1em;
   /* border-radius: 8px; */
 }
 .speaker-time {
-  width: 150px; /* •K—v‚É‰‚¶‚Ä’²® */
+  width: 150px; /* ï¿½Kï¿½vï¿½É‰ï¿½ï¿½ï¿½ï¿½Ä’ï¿½ï¿½ï¿½ */
   flex-shrink: 0;
 }
 
 .speaker-name {
-  width: 210px; /* •K—v‚É‰‚¶‚Ä’²® */
+  width: 210px; /* ï¿½Kï¿½vï¿½É‰ï¿½ï¿½ï¿½ï¿½Ä’ï¿½ï¿½ï¿½ */
   flex-shrink: 0;
 }
 
 .speak-title {
-  width: 840px; /* •K—v‚É‰‚¶‚Ä’²® */
+  width: 840px; /* ï¿½Kï¿½vï¿½É‰ï¿½ï¿½ï¿½ï¿½Ä’ï¿½ï¿½ï¿½ */
   flex-shrink: 0;
 }
 
-/* –¼‘O‚Æƒ^ƒCƒgƒ‹‚¾‚¯‰¡•À‚Ñ‚É */
+/* ï¿½ï¿½ï¿½Oï¿½Æƒ^ï¿½Cï¿½gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ‚ï¿½ */
 .speaker-row {
   display: flex;
   gap: 1em;
@@ -141,7 +141,7 @@ h1, h2 {
   /* flex-wrap: wrap; */
 }
 
-/* u‰‰ƒŠƒXƒg‚ÌÚ×‚ÉŠÖ‚·‚é‚à‚Ì */
+/* ï¿½uï¿½ï¿½ï¿½ï¿½ï¿½Xï¿½gï¿½ÌÚ×‚ÉŠÖ‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 .speak-detail {
   margin-top: 0.5em;
   padding: 0.7em 1em;
@@ -150,15 +150,15 @@ h1, h2 {
   display: none;
 }
 
-/* 1‚Â‚¨‚«‚É”wŒiF‚ğ•Ï‚¦‚é */
+/* 1ï¿½Â‚ï¿½ï¿½ï¿½ï¿½É”wï¿½iï¿½Fï¿½ï¿½Ï‚ï¿½ï¿½ï¿½ */
 .speaker:nth-child(even) {
-  background: #b5e1f0;
+  background: #ebf3ff;
 }
 .speaker:nth-child(odd) {
   background: #ffffff;
 }
 
-/* ƒzƒo[‚Ìƒ{ƒ^ƒ“‚ÌF‚ğ•ÏX */
+/* ï¿½zï¿½oï¿½[ï¿½ï¿½ï¿½Ìƒ{ï¿½^ï¿½ï¿½ï¿½ÌFï¿½ï¿½ÏX */
 
 .button:hover {
   background-color: #005f99;
@@ -182,7 +182,7 @@ h1, h2 {
   text-decoration: underline;
 }
 
-/* ˆÈ‰ºƒ‚ƒoƒCƒ‹Œü‚¯‚ÌƒŒƒXƒ|ƒ“ƒVƒuİ’è */
+/* ï¿½È‰ï¿½ï¿½ï¿½ï¿½oï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ìƒï¿½ï¿½Xï¿½|ï¿½ï¿½ï¿½Vï¿½uï¿½İ’ï¿½ */
 @media (max-width: 600px) {
   body {
         font-size: 90%;
