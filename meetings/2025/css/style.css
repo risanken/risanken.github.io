@@ -9,8 +9,12 @@
 /* ========= Base / Reset ========= */
 * { box-sizing: border-box; }
 
-/* Prevent horizontal scroll on any device */
-html { max-width: 100vw; overflow-x: hidden; scroll-behavior: smooth; }
+html {
+  /* Prevent horizontal scroll on any device */
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -31,30 +35,30 @@ h1, h2, h3, p, li, div { overflow-wrap: anywhere; }
 .container {
   width: min(100%, 1200px);
   margin-inline: auto;
-  padding-left: clamp(12px, 4vw, 24px);
-  padding-right: clamp(12px, 4vw, 24px);
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-inline: clamp(12px, 4vw, 24px);
+  padding-block: 1em;
 }
 
 /* ========= Header (Hero background) =========
    Note: If the image path differs in your project,
    update the URL below. Keep `center / cover` for good cropping. */
 header.site-header {
-  position: relative;
+  position: relative; /* positioning context for .header-home */
   color: #fff;
   background: url("../../../images/risanken_logo_16x9_noname.png") center / cover no-repeat;
   min-height: clamp(180px, 20vw, 420px);
-  display: grid;           /* Center content both axes */
+  display: grid;      /* center content both axes */
   place-items: center;
   text-align: center;
   padding-block: clamp(24px, 6vw, 56px);
+  padding-inline: 0;  /* ensure the right edge is the actual header edge */
 }
 
 /* Subtle overlay to keep text readable regardless of photo */
 header.site-header::before {
   content: "";
-  position: absolute; inset: 0;
+  position: absolute;
+  inset: 0;
   background: linear-gradient(to bottom, rgba(0,0,0,.35), rgba(0,0,0,.35));
 }
 
@@ -67,33 +71,48 @@ header.site-header h1 {
   font-size: clamp(1.6rem, 4.5vw, 2.5rem);
 }
 
-/* Subtext (date & location) in header */
+/* Header subtext (date & location) */
 .header-sub {
-  margin: 2em 0 0; /* Slightly larger margin from title */
-  font-size: 1.6rem; /* Bigger font size */
-  font-weight: bold; /* Make it bold */
+  margin: 2em 0 0;          /* larger gap from title as requested */
+  font-size: 1.6rem;        /* emphasized size */
+  font-weight: bold;
   line-height: 1.5;
   color: #fff;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  padding: 0.5em 1em; /* Space inside the box */
-  border-radius: 8px; /* Rounded corners */
-  display: inline-block; /* Only as wide as the content */
+  background: rgba(0, 0, 0, 0.5);  /* semi-transparent background */
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  display: inline-block;    /* shrink to content width */
 }
 
+/* "Home" link in the header (top-right corner) */
+.header-home {
+  position: absolute; /* Position relative to header.site-header */
+  top: clamp(12px, 2.2vw, 20px); /* Responsive distance from the top */
+  /* Respect safe areas (iPhone notch); otherwise flush to the right */
+  right: max(0px, env(safe-area-inset-right, 0px));
+  margin: 0; /* Remove any default margins */
+  color: #fff; /* White text */
+  padding: 0.4em 0.8em; /* Compact padding */
+  border: 1px solid rgba(255,255,255,0.8); /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  background: rgba(0,0,0,0.15); /* Semi-transparent dark background */
+  backdrop-filter: blur(2px); /* Blur effect behind the element */
+  -webkit-backdrop-filter: blur(2px); /* Safari support */
+  z-index: 2; /* Keep above overlay */
+  text-decoration: none; /* Remove underline */
+  font-weight: 600; /* Slightly bold text */
+  transition: background .2s, color .2s, border-color .2s; /* Smooth hover effects */
+}
 
-/* ========= Footer ========= */
-footer {
-  background-color: var(--main-color);
-  color: #fff;
-  padding: 1.5em 0;
-  text-align: center;
+.header-home:hover {
+  background: rgba(255,255,255,0.18); /* Slightly brighter on hover */
+  border-color: #fff; /* Solid white border on hover */
 }
 
 /* ========= Section blocks ========= */
-
 .about {
   background-color: #f0f4f8;
-  padding: 1em 1em;
+  padding: 1em 1em;         /* compact vertical spacing per current design */
   margin-bottom: 2em;
   border-radius: 8px;
 }
@@ -104,18 +123,10 @@ main .about:first-of-type { margin-top: 0; }
 .about h2 { margin-top: 0; }
 .about p  { margin: 0.5em 0 0; }
 
-/*
-.info-large {
-  font-size: 1.3em;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 0; /* avoid extra gap above the next section */
-}
-*/
-
+/* Headings default top margin reset */
 h1, h2 { margin-top: 0; }
 
-/* ========= Card ========= */
+/* Cards */
 .card {
   background: #fff;
   padding: 1em;
@@ -124,9 +135,8 @@ h1, h2 { margin-top: 0; }
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-/* ========= Button / Links ========= */
-.button,
-a.button {
+/* Buttons / Links */
+.button, a.button {
   display: inline-block;
   margin-top: 0.5em;
   padding: 0.7em 1.1em;
@@ -139,12 +149,73 @@ a.button {
 
 .link-list { list-style: none; padding: 0; }
 .link-list li { margin: 0.5em 0; }
-
-.link-list a {
-  color: var(--main-color);
-  text-decoration: none;
-}
+.link-list a { color: var(--main-color); text-decoration: none; }
 .link-list a:hover { text-decoration: underline; }
+
+/* ========= Program (speakers) ========= */
+.speaker-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.speaker {
+  display: block;
+  padding: 0.7em 1em;
+}
+
+/* Alternating backgrounds for readability */
+.speaker:nth-child(even) { background: #dbe9fe; }
+.speaker:nth-child(odd)  { background: #ffffff; }
+
+/* Row: time | name | title (desktop/tablet) */
+.speaker-row {
+  display: grid;
+  grid-template-columns: 110px minmax(140px, 200px) 1fr; /* cap name column width */
+  align-items: start;
+  column-gap: 14px;           /* base gap between columns */
+}
+
+/* Columns */
+.speaker-time {
+  white-space: nowrap;
+  font-weight: 600;
+  margin: 0;
+}
+.speaker-name {
+  font-weight: 600;
+  margin: 0;
+}
+.speak-title {
+  cursor: pointer;
+  position: relative;
+  padding-right: 22px;        /* space for the arrow */
+  margin: 0;
+}
+
+/* Detail panel (toggled by JS) */
+.speak-detail {
+  margin-top: 0.5em;
+  padding: 0.7em 1em;
+  background: #f8f8f8;
+  border-left: 4px solid #b5e1f0;
+  display: none;
+}
+
+/* Arrow indicator (optional) */
+.speak-title::after {
+  content: "▾";
+  position: absolute;
+  right: 0;
+  top: 0;
+  line-height: 1;
+  transform: translateY(2px) rotate(0deg);
+  transition: transform .2s ease;
+}
+.speak-title[aria-expanded="true"]::after {
+  transform: translateY(2px) rotate(180deg);
+}
 
 /* ========= Access (Map & Text) =========
    Use CSS Grid to get 2 columns on desktop, stack on mobile. */
@@ -171,80 +242,57 @@ a.button {
 .access-map  { max-width: 600px; }
 .access-text { max-width: 600px; }
 
-/* ========= Speaker list ========= */
-.speaker-list {
+/* ========= Footer ========= */
+footer {
+  background: var(--main-color);
+  color: #fff;
+  /* subtle top separator; remove unintended bottom lines */
+  box-shadow: 0 -1px 0 rgba(255,255,255,.18) inset;
+  border-bottom: 0;
+}
+
+.footer-grid {
   display: flex;
-  flex-direction: column;
-  gap: 1em;
-  margin-top: 1em;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding-block: 14px;       /* compact vertical padding */
 }
 
-/* Each talk block */
-.speaker {
-  display: block;
-  padding: 0.7em 1em;
+/* Footer link (button-like) */
+.footer-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: .6em 1em;
+  border: 1px solid rgba(255,255,255,.65);
+  border-radius: 12px;       /* a bit softer */
+  transition: background .2s, border-color .2s, transform .06s;
 }
+.footer-link:hover,
+.footer-link:focus-visible {
+  background: rgba(255,255,255,.12);
+  border-color: #fff;
+  outline: none;
+}
+.footer-link:active { transform: translateY(1px); }
 
-/* Alternating background rows for readability */
-.speaker:nth-child(even) { background: #dbe9fe; }
-.speaker:nth-child(odd)  { background: #ffffff; }
+.copyright { margin: 0; font-size: .95em; opacity: .9; }
 
-/* Row: time | name | title (desktop/tablet) */
-.speaker-row {
-  display: grid;
-  grid-template-columns: 110px minmax(140px, 200px) 1fr; /* cap name col width */
-  align-items: start;
-  column-gap: 14px; /* base gap between columns */
-}
+/* Tighten the space just above the footer (if a section leaves big margin) */
+.info-large:last-of-type,
+.about:last-of-type { margin-bottom: 8px; }
 
-/* Columns */
-.speaker-time {
-  white-space: nowrap;
-  font-weight: 600;
-  margin: 0;
-}
-.speaker-name {
-  font-weight: 600;
-  margin: 0;
-}
-.speak-title {
-  cursor: pointer;
-  position: relative;
-  padding-right: 22px; /* space for the arrow */
-  margin: 0;
-}
-
-/* Detail panel (toggled by JS) */
-.speak-detail {
-  margin-top: 0.5em;
-  padding: 0.7em 1em;
-  background: #f8f8f8;
-  border-left: 4px solid #b5e1f0;
-  display: none;
-}
-
-/* Arrow indicator (optional) */
-.speak-title::after {
-  content: "▾";
-  position: absolute; right: 0; top: 0;
-  line-height: 1;
-  transform: translateY(2px) rotate(0deg);
-  transition: transform .2s ease;
-}
-.speak-title[aria-expanded="true"]::after {
-  transform: translateY(2px) rotate(180deg);
-}
-
-/* ========= Responsive tweaks ========= */
+/* ========= Responsive ========= */
 @media (max-width: 900px) {
   /* Access section stacks on narrower screens */
   .access-flex { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 768px) {
-  /* Speaker rows: time | (name+title stacked) */
+  /* Program: time | (name+title stacked) */
   .speaker-row {
-    grid-template-columns: 92px 1fr;  /* time | right column */
+    grid-template-columns: 92px 1fr; /* time | right column */
     grid-auto-rows: auto;
     column-gap: 10px;
     row-gap: 4px;
@@ -255,6 +303,17 @@ a.button {
 
   /* Keep cards compact on mobile */
   .card { padding: 1em 0.8em; }
+}
+
+@media (max-width: 640px) {
+  /* Footer mobile stacking */
+  .footer-grid {
+    flex-direction: column;
+    align-items: flex-start; /* left align for readability */
+    gap: 10px;
+  }
+  .footer-link { width: 100%; text-align: center; } /* easy tap target */
+  .copyright { opacity: .95; }
 }
 
 @media (max-width: 600px) {
