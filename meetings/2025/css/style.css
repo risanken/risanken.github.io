@@ -31,9 +31,10 @@ h1, h2, h3, p, li, div { overflow-wrap: anywhere; }
 .container {
   width: min(100%, 1200px);
   margin-inline: auto;
-  padding: 1em;
   padding-left: clamp(12px, 4vw, 24px);
   padding-right: clamp(12px, 4vw, 24px);
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 /* ========= Header (Hero background) =========
@@ -43,7 +44,7 @@ header.site-header {
   position: relative;
   color: #fff;
   background: url("../../../images/risanken_logo_16x9_noname.png") center / cover no-repeat;
-  min-height: clamp(180px, 15vw, 420px);
+  min-height: clamp(180px, 20vw, 420px);
   display: grid;           /* Center content both axes */
   place-items: center;
   text-align: center;
@@ -68,11 +69,17 @@ header.site-header h1 {
 
 /* Subtext (date & location) in header */
 .header-sub {
-  margin: 2.5em 0 0;
-  font-size: 1.5em;
-  line-height: 1.4;
+  margin: 2em 0 0; /* Slightly larger margin from title */
+  font-size: 1.6rem; /* Bigger font size */
+  font-weight: bold; /* Make it bold */
+  line-height: 1.5;
   color: #fff;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 0.5em 1em; /* Space inside the box */
+  border-radius: 8px; /* Rounded corners */
+  display: inline-block; /* Only as wide as the content */
 }
+
 
 /* ========= Footer ========= */
 footer {
@@ -83,21 +90,28 @@ footer {
 }
 
 /* ========= Section blocks ========= */
+
 .about {
   background-color: #f0f4f8;
-  padding: 2em 1em;
+  padding: 1em 1em;
   margin-bottom: 2em;
   border-radius: 8px;
 }
 
+/* Remove extra top space before the first .about under main */
+main .about:first-of-type { margin-top: 0; }
+
 .about h2 { margin-top: 0; }
 .about p  { margin: 0.5em 0 0; }
 
+/*
 .info-large {
   font-size: 1.3em;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 0; /* avoid extra gap above the next section */
 }
+*/
 
 h1, h2 { margin-top: 0; }
 
@@ -121,7 +135,6 @@ a.button {
   text-decoration: none;
   border-radius: 5px;
 }
-
 .button:hover { background-color: #005f99; }
 
 .link-list { list-style: none; padding: 0; }
@@ -131,7 +144,6 @@ a.button {
   color: var(--main-color);
   text-decoration: none;
 }
-
 .link-list a:hover { text-decoration: underline; }
 
 /* ========= Access (Map & Text) =========
@@ -151,18 +163,15 @@ a.button {
   border-radius: 8px;
   box-shadow: 0 1px 4px rgba(0,0,0,.08);
 }
-
 .access-map .map-wrap iframe {
   width: 100%;
   height: 100%;
   border: 0;
 }
-
 .access-map  { max-width: 600px; }
 .access-text { max-width: 600px; }
 
 /* ========= Speaker list ========= */
-/* Outer list spacing */
 .speaker-list {
   display: flex;
   flex-direction: column;
@@ -180,35 +189,32 @@ a.button {
 .speaker:nth-child(even) { background: #dbe9fe; }
 .speaker:nth-child(odd)  { background: #ffffff; }
 
-/* One row contains time / name / title.
-   Use CSS Grid to avoid fixed widths and overflow. */
+/* Row: time | name | title (desktop/tablet) */
 .speaker-row {
   display: grid;
-  grid-template-columns: 110px minmax(140px, 200px) 1fr; /* Desktop: 3 columns */
+  grid-template-columns: 110px minmax(140px, 200px) 1fr; /* cap name col width */
   align-items: start;
-  column-gap: 18px; /* Widen time↔name */
+  column-gap: 14px; /* base gap between columns */
 }
 
-/* Columns: unified definitions (no duplicates) */
+/* Columns */
 .speaker-time {
   white-space: nowrap;
   font-weight: 600;
+  margin: 0;
 }
-
 .speaker-name {
   font-weight: 600;
-  /* Pull the title closer while keeping time↔name wider */
-  margin-right: -8px; /* reduce space to the next column (title) */
+  margin: 0;
 }
-
 .speak-title {
   cursor: pointer;
   position: relative;
-  padding-right: 22px;          /* Space for the small arrow */
-  margin-left: -4px;            /* fine-tune proximity to speaker name */
+  padding-right: 22px; /* space for the arrow */
+  margin: 0;
 }
 
-/* Detail panel (hidden by default, toggled by JS) */
+/* Detail panel (toggled by JS) */
 .speak-detail {
   margin-top: 0.5em;
   padding: 0.7em 1em;
@@ -217,8 +223,7 @@ a.button {
   display: none;
 }
 
-/* Optional: small arrow indicating open/close state.
-   Works with JS that toggles [aria-expanded]. */
+/* Arrow indicator (optional) */
 .speak-title::after {
   content: "▾";
   position: absolute; right: 0; top: 0;
@@ -226,7 +231,6 @@ a.button {
   transform: translateY(2px) rotate(0deg);
   transition: transform .2s ease;
 }
-
 .speak-title[aria-expanded="true"]::after {
   transform: translateY(2px) rotate(180deg);
 }
@@ -238,18 +242,22 @@ a.button {
 }
 
 @media (max-width: 768px) {
-  /* Speaker rows become a single column on mobile */
-  .speaker-row { grid-template-columns: 1fr; }
+  /* Speaker rows: time | (name+title stacked) */
+  .speaker-row {
+    grid-template-columns: 92px 1fr;  /* time | right column */
+    grid-auto-rows: auto;
+    column-gap: 10px;
+    row-gap: 4px;
+  }
+  .speaker-time  { grid-column: 1; grid-row: 1 / span 2; align-self: start; }
+  .speaker-name  { grid-column: 2; grid-row: 1; }
+  .speak-title   { grid-column: 2; grid-row: 2; padding-right: 18px; }
 
-  /* Reset negative adjustments in single-column layout */
-  .speaker-name { margin-right: 0; }
-  .speak-title  { margin-left: 0; }
-
-  /* Slightly tighten card padding on small screens */
+  /* Keep cards compact on mobile */
   .card { padding: 1em 0.8em; }
 }
 
 @media (max-width: 600px) {
-  /* Keep text comfortably sized on very small screens */
+  /* Comfortable text size on very small screens */
   body { font-size: 90%; }
 }
