@@ -1,0 +1,246 @@
+:root {
+    --main-color: #004080;
+    --accent-color: #007acc;
+    --bg-color: #f9f9f9;
+    --font-family: 'Helvetica Neue', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: #333;
+  line-height: 1.6;
+  font-size: 1.1em;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* �y�[�W�S�̂̉��X�N���[���h�~ */
+html {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+
+/* ヘッダー（背景画像） */
+header.site-header {
+  position: relative;
+  color: #fff;
+  background: url("../../../images/risanken_logo_16x9_noname.png") center / cover no-repeat;
+  min-height: 230px;  /* ヘッダーの縦サイズを指定 */
+  display: flex;      /* 中央寄せ用 */
+  align-items: center;/* 縦方向中央に文字 */
+  justify-content: center; /* 横方向中央に文字 */
+  text-align: center;
+}
+
+header.site-header h1 {
+  color: #fff;        /* 白色 */
+  font-size: 2.5em;   /* スマホ時のサイズ */
+  font-weight: bold;  
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  header.site-header h1 {  
+    color: #fff;        /* 白色 */
+    font-size: 2.5em; /* PC表示でさらに大きく */
+  }
+}
+
+
+/* ===== フッターは従来どおり青背景 ===== */
+footer {
+  background-color: var(--main-color);
+  color: white;
+  padding: 1.5em 0;
+  text-align: center;
+}
+
+
+.about {
+  background-color: #f0f4f8;
+  padding: 2em 1em;
+  margin-bottom: 2em;
+  border-radius: 8px;
+}
+
+.about h2 {
+  margin-top: 0;
+}
+
+.about p {
+  margin: 0.5em 0 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1em;
+}
+
+.info-large {
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+h1, h2 {
+  margin-top: 0;
+}
+
+.card {
+  background: white;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.button {
+  display: inline-block;
+  margin-top: 0.5em;
+  padding: 0.5em 1em;
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* �A�N�Z�X���̃��C�A�E�g */
+.access-flex {
+  display: flex;
+  gap: 2em;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.access-map {
+  flex: 1 1 300px;
+  min-width: 250px;
+  max-width: 600px;
+}
+
+.access-text {
+  flex: 1 1 200px;
+  min-width: 200px;
+  max-width: 600px;
+}
+
+/* �u���҃��X�g�Ɋւ�����̂��� */
+.speaker-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.speaker {
+  display: block;
+  gap: 1em;
+  /* margin-bottom: 1.5em; */
+  /* �p�������ۂ߂ė]�����ǉ�����Ƃ���Ɍ��₷�� */
+  padding: 0.7em 1em;
+  /* border-radius: 8px; */
+}
+.speaker-time {
+  width: 150px; /* �K�v�ɉ����Ē��� */
+  flex-shrink: 0;
+}
+
+.speaker-name {
+  width: 210px; /* �K�v�ɉ����Ē��� */
+  margin-left: -1.3em; 
+  flex-shrink: 0;
+}
+
+.speak-title {
+  width: 840px; /* �K�v�ɉ����Ē��� */
+  flex-shrink: 0;
+}
+
+/* ���O�ƃ^�C�g�����������т� */
+.speaker-row {
+  display: flex;
+  gap: 0.3em;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+/* �u�����X�g�̏ڍׂɊւ������ */
+.speak-detail {
+  margin-top: 0.5em;
+  padding: 0.7em 1em;
+  background: #f8f8f8;
+  border-left: 4px solid #b5e1f0;
+  display: none;
+}
+
+/* 1�����ɔw�i�F��ς��� */
+.speaker:nth-child(even) {
+  background: #dbe9fe;
+}
+.speaker:nth-child(odd) {
+  background: #ffffff;
+}
+
+/* �z�o�[���̃{�^���̐F��ύX */
+
+.button:hover {
+  background-color: #005f99;
+}
+
+.link-list {
+  list-style: none;
+  padding: 0;
+}
+
+.link-list li {
+  margin: 0.5em 0;
+}
+
+.link-list a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.link-list a:hover {
+  text-decoration: underline;
+}
+
+/* �ȉ����o�C�������̃��X�|���V�u�ݒ� */
+@media (max-width: 600px) {
+  body {
+        font-size: 90%;
+    }
+
+    .card {
+        padding: 1em 0.8em;
+    }
+  .speaker-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2em;
+  }
+  .speaker-name,
+  .speaker-time,
+  .speak-title {
+    width: 100%;
+    min-width: 0;
+    word-break: break-all;
+  }
+  .access-flex {
+    flex-direction: column;
+  }
+  .access-map, .access-text {
+    /* max-width: 100%; */
+    width: 100%;
+    min-width: 0;
+  }
+}
+
