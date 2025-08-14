@@ -26,12 +26,42 @@ html {
   overflow-x: hidden;
 }
 
-header, footer {
+
+/* ヘッダー（背景画像） */
+header.site-header {
+  position: relative;
+  color: #fff;
+  background: url("../../../images/risanken_logo_16x9_noname.png") center / cover no-repeat;
+  min-height: 230px;  /* ヘッダーの縦サイズを指定 */
+  display: flex;      /* 中央寄せ用 */
+  align-items: center;/* 縦方向中央に文字 */
+  justify-content: center; /* 横方向中央に文字 */
+  text-align: center;
+}
+
+header.site-header h1 {
+  color: #fff;        /* 白色 */
+  font-size: 2.5em;   /* スマホ時のサイズ */
+  font-weight: bold;  
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  header.site-header h1 {  
+    color: #fff;        /* 白色 */
+    font-size: 2.5em; /* PC表示でさらに大きく */
+  }
+}
+
+
+/* ===== フッターは従来どおり青背景 ===== */
+footer {
   background-color: var(--main-color);
   color: white;
   padding: 1.5em 0;
   text-align: center;
 }
+
 
 .about {
   background-color: #f0f4f8;
@@ -125,6 +155,7 @@ h1, h2 {
 
 .speaker-name {
   width: 210px; /* �K�v�ɉ����Ē��� */
+  margin-left: -1.3em; 
   flex-shrink: 0;
 }
 
@@ -136,7 +167,7 @@ h1, h2 {
 /* ���O�ƃ^�C�g�����������т� */
 .speaker-row {
   display: flex;
-  gap: 1em;
+  gap: 0.3em;
   align-items: center;
   /* flex-wrap: wrap; */
 }
@@ -152,7 +183,7 @@ h1, h2 {
 
 /* 1�����ɔw�i�F��ς��� */
 .speaker:nth-child(even) {
-  background: #ebf3ff;
+  background: #dbe9fe;
 }
 .speaker:nth-child(odd) {
   background: #ffffff;

@@ -26,12 +26,49 @@ html {
   overflow-x: hidden;
 }
 
-header, footer {
+/* ヘッダー（背景画像） */
+header.site-header {
+   position: relative;
+  color: #fff;
+  background: url("../images/risanken_logo_16x9_noname.png") center / cover no-repeat;
+  min-height: 430px;  /* ヘッダーの縦サイズを指定 */
+  display: flex;      /* 中央寄せ用 */
+  align-items: center;/* 縦方向中央に文字 */
+  justify-content: center; /* 横方向中央に文字 */
+  text-align: center;
+}
+
+header.site-header h1 {
+  color: #fff;        /* 白色 */
+  font-size: 2.5em;   /* スマホ時のサイズ */
+  font-weight: bold;  
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  header.site-header h1 {  
+    color: #fff;        /* 白色 */
+    font-size: 3.2em; /* PC表示でさらに大きく */
+  }
+}
+
+
+/* ===== フッターは従来どおり青背景 ===== */
+footer {
   background-color: var(--main-color);
   color: white;
   padding: 1.5em 0;
   text-align: center;
 }
+
+
+/*
+.header-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1em; 
+}
+*/
 
 .about {
   background-color: #f0f4f8;
