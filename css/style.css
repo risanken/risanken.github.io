@@ -23,7 +23,6 @@ html {
 body {
   margin: 0;
   font-family: var(--font-family);
-  background-color: --bg-color;
   background-color: var(--bg-color);
   color: #333;
   line-height: 1.6;
@@ -72,18 +71,33 @@ footer {
 .container {
   max-width: 1080px; /* Slightly narrower for readability */
   margin: 0 auto;
-  padding: 1em 1em 1em;  /* top=0, left/right=1em, bottom=1em */
+  padding: 0 1em 1em;  /* top=0, left/right=1em, bottom=1em */
 }
 
+/* Add a thin white band between header image and the first section */
+header + main.container {
+  padding-top: clamp(10px, 1.2vw, 18px);
+}
+
+/* Use parent-controlled spacing to avoid margin-collapsing */
+main.container {
+  display: grid;
+  gap: 24px;           /* vertical spacing between sections */
+}
+main.container > section { margin: 0; }
+
+/* Blue card */
 .about {
   background-color: #f0f4f8;
-  padding: 2em 1em;
-  margin-top: 0em;
-  margin-bottom: 2em;
+  padding: 1em 1em;            /* inner spacing of the blue card */
   border-radius: 8px;
+  overflow: hidden;            /* prevent first-child margin from escaping */
 }
 
-h1,h2 { margin-top: 2em; }
+h1, h2 { margin-top: 0; }      /* keep headings flush to card top */
+.past-meetings h2,.organizers h2 {
+  margin-top: 1.5em; /* Adjust spacing above headings */
+}
 
 /* Optional card style */
 .card {
@@ -110,7 +124,6 @@ h1,h2 { margin-top: 2em; }
   border-radius: 6px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   transition: background-color 0.2s, color 0.2s;
-  /* No fixed left margin to keep it responsive */
 }
 .button:hover {
   background-color: #f0f8ff;   /* Light blue on hover */
@@ -120,7 +133,6 @@ h1,h2 { margin-top: 2em; }
 /* =======================
    Speaker list (responsive)
    ======================= */
-/* (Optional) wrapper if needed elsewhere */
 .speaker-list {
   display: flex;
   flex-direction: column;
@@ -128,39 +140,37 @@ h1,h2 { margin-top: 2em; }
   margin-top: 1em;
 }
 
-/* Each speaker row */
 .speaker {
   display: grid;
   grid-template-columns: 1fr;      /* 1 column on mobile */
   gap: .35rem .9rem;
-  padding: .15em 0;
+  padding: 0.8em 0;                /* increased vertical padding */
+  margin: 0.4em 0;                 /* extra margin between speakers */
   align-items: start;
   border-bottom: 1px dashed #eee;
 }
 .speaker:last-of-type { border-bottom: 0; }
 
-/* Text wrapping to avoid overflow */
 .speaker-name,
 .speak-title {
   word-break: break-word;
   overflow-wrap: anywhere;
   line-height: 1.6;
-  /* Widths are managed by grid; no fixed pixel widths */
 }
 
-/* 2-column layout on tablet and up: [name] [title] */
-/* Tighter speaker layout on desktop */
-/* Speaker list: closer but aligned start position on desktop */
+/* Desktop/tablet: aligned start position */
 @media (min-width: 768px) {
   .speaker {
     display: table;
     width: 100%;
     border-collapse: collapse;
+    margin: 0.5em 0;             /* ensure margin applies in table layout */
+    padding: 0.8em 0;
   }
   .speaker-name {
     display: table-cell;
-    width: 240px;        /* was 340px → closer start position */
-    padding-right: 16px; /* was 24px  → slightly tighter gap */
+    width: 240px;                /* adjust 240–300px as needed */
+    padding-right: 16px;         /* column gap */
     vertical-align: top;
   }
   .speak-title {
@@ -168,10 +178,6 @@ h1,h2 { margin-top: 2em; }
     vertical-align: top;
   }
 }
-
-
-
-
 
 /* =======================
    Past meetings link list
@@ -195,16 +201,17 @@ h1,h2 { margin-top: 2em; }
   color: var(--main-color);
   text-decoration: none;
   word-break: break-word;
-  overflow-wrap: anywhere;      /* Long URLs stay inside */
+  overflow-wrap: anywhere;
 }
 .link-list a:hover { text-decoration: underline; }
 
 @media (min-width: 640px) {
-  .link-list { grid-template-columns: 1fr 1fr; }  /* 2 columns */
+  .link-list { grid-template-columns: 1fr 1fr; }
 }
 @media (min-width: 960px) {
-  .link-list { grid-template-columns: 1fr 1fr 1fr; } /* 3 columns */
+  .link-list { grid-template-columns: 1fr 1fr 1fr; }
 }
+
 
 /* =======================
    Media & MathJax overflow guards
@@ -212,28 +219,20 @@ h1,h2 { margin-top: 2em; }
 img, video { max-width: 100%; height: auto; display: block; }
 
 pre, code, kbd, samp {
-  white-space: pre-wrap;   /* wrap long code lines */
+  white-space: pre-wrap;
   word-break: break-word;
 }
 
-/* Prevent oversized equations from overflowing */
 .MathJax_Display, .mjx-chtml {
   max-width: 100%;
-  overflow-x: auto;        /* allow horizontal scroll if needed */
+  overflow-x: auto;
 }
 
 /* =======================
    Mobile fine-tuning
    ======================= */
 @media (max-width: 600px) {
-  /* Slightly smaller overall text if desired */
   body { font-size: 95%; }
-
   .card { padding: 1em 0.8em; }
-
-  /* speaker rows are already single-column on mobile */
-  .speaker { grid-template-columns: 1fr; }
-
-  /* container side padding a bit tighter for small phones */
-  .container { padding: 0.9em; }
+  .container { padding: 0 0.9em 1em; }
 }
