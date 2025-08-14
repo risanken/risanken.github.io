@@ -40,7 +40,7 @@ header.site-header {
   color: #fff;
   background: url("../images/risanken_logo_16x9_noname.png") center / cover no-repeat;
   /* Use svh to avoid mobile URL bar jump */
-  min-height: 40svh;
+  min-height: 52svh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -235,4 +235,29 @@ pre, code, kbd, samp {
   body { font-size: 95%; }
   .card { padding: 1em 0.8em; }
   .container { padding: 0 0.9em 1em; }
+}
+
+/* =======================
+   Mobile-specific tightening (remove big gap above "about")
+   ======================= */
+@media (max-width: 600px) {
+  /* 1) Make the header shorter on phones */
+  header.site-header {
+    min-height: 32svh; /* was 52svh on global */
+  }
+
+  /* 2) Thin the white band between header and first section */
+  header + main.container {
+    padding-top: 6px; /* was clamp(10px, 1.2vw, 18px) */
+  }
+
+  /* 3) Reduce vertical spacing between sections */
+  main.container {
+    gap: 12px; /* was 24px */
+  }
+
+  /* 4) Ensure the first text inside .about does not add extra top gap */
+  .about > *:first-child {
+    margin-top: 0 !important;
+  }
 }
