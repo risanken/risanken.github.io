@@ -1,2 +1,5 @@
+# _config.yml
+url: "https://risanken.github.io"
+baseurl: ""
 plugins:
   - jekyll-sitemap
