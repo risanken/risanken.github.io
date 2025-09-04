@@ -114,6 +114,7 @@ h1, h2 { margin-top: 0; }      /* keep headings flush to card top */
 .button {
   display: inline-block;
   margin-top: 0.5em;
+  margin-left: 2.5em;
   padding: 0.6em 1.4em;
   background-color: #fff;      /* White background */
   color: #0066cc;              /* Blue text */

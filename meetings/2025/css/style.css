@@ -320,3 +320,42 @@ footer {
   /* Comfortable text size on very small screens */
   body { font-size: 90%; }
 }
+/* ===== Timetable 全体 ===== */
+.timetable-block {
+  text-align: center;   /* 中央揃え */
+  margin: 1em 0 2em;
+}
+
+/* 上の「タイムテーブル (PDFリンク)」部分 */
+.timetable-header {
+  margin-bottom: 0.5em; /* 文字と画像の間隔 */
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* リンク装飾 */
+.timetable-header a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+.timetable-header a:hover {
+  text-decoration: underline;
+}
+
+/* タイムテーブル画像 */
+.timetable-img {
+  display: block;
+  margin: 0 auto 1em auto; /* 中央寄せ */
+  max-width: 50%;          /* PCではページ幅の半分 */
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+/* モバイルでは全幅にする */
+@media (max-width: 768px) {
+  .timetable-img {
+    max-width: 100%;
+  }
+}
