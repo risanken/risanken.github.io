@@ -253,7 +253,7 @@ footer {
 
 .footer-grid {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end; /* 中身を右寄せ */
   align-items: center;
   gap: 16px;
   padding-block: 14px;       /* compact vertical padding */
