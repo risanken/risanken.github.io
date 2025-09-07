@@ -1,0 +1,632 @@
+bplist00�_WebMainResource�	
+_WebResourceMIMEType_WebResourceTextEncodingName^WebResourceURL_WebResourceFrameName_WebResourceDataYtext/htmlUUTF-8_Chttp://www2.yukawa.kyoto-u.ac.jp/~naoki.sasakura/risan/schedule.htmPO^<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<meta name="ProgId" content="Excel.Sheet">
+<meta name="Generator" content="Microsoft Excel 11">
+<link rel="File-List" href="program1.files/filelist.xml">
+<link rel="Edit-Time-Data" href="program1.files/editdata.mso">
+<link rel="OLE-Object-Data" href="program1.files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+x\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>sasakura</o:Author>
+  <o:LastAuthor>sasakura</o:LastAuthor>
+  <o:Created>2010-10-07T06:17:36Z</o:Created>
+  <o:LastSaved>2010-10-07T06:18:57Z</o:LastSaved>
+  <o:Company>京都大学基礎物理学研究所</o:Company>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:.98in .79in .98in .79in;
+	mso-header-margin:.51in;
+	mso-footer-margin:.51in;}
+tr
+	{mso-height-source:auto;
+	mso-ruby-visibility:none;}
+col
+	{mso-width-source:auto;
+	mso-ruby-visibility:none;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"ＭＳ Ｐゴシック", monospace;
+	mso-font-charset:128;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:標準;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"ＭＳ Ｐゴシック", monospace;
+	mso-font-charset:128;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	font-size:14.0pt;
+	font-weight:700;}
+.xl25
+	{mso-style-parent:style0;
+	font-size:9.0pt;}
+.xl26
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.0pt solid windowtext;}
+.xl27
+	{mso-style-parent:style0;
+	text-align:center;
+	vertical-align:bottom;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl28
+	{mso-style-parent:style0;
+	text-align:center;
+	vertical-align:bottom;
+	border-top:1.0pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl29
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.0pt solid windowtext;}
+.xl30
+	{mso-style-parent:style0;
+	text-align:center;
+	vertical-align:bottom;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl31
+	{mso-style-parent:style0;
+	text-align:center;
+	vertical-align:bottom;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl32
+	{mso-style-parent:style0;
+	mso-number-format:"Short Time";}
+.xl33
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid black;
+	border-left:1.0pt solid windowtext;}
+.xl34
+	{mso-style-parent:style0;
+	text-align:center;
+	vertical-align:bottom;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;}
+.xl35
+	{mso-style-parent:style0;
+	text-align:center;
+	vertical-align:bottom;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:none;
+	border-left:none;}
+.xl36
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:1.0pt solid windowtext;}
+.xl37
+	{mso-style-parent:style0;
+	text-align:center;
+	vertical-align:bottom;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl38
+	{mso-style-parent:style0;
+	text-align:center;
+	vertical-align:bottom;
+	border-top:.5pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl39
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.0pt solid windowtext;}
+.xl40
+	{mso-style-parent:style0;
+	mso-number-format:"Short Time";
+	text-align:center;
+	vertical-align:bottom;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl41
+	{mso-style-parent:style0;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid black;
+	border-left:1.0pt solid windowtext;}
+.xl42
+	{mso-style-parent:style0;
+	text-align:center;
+	vertical-align:bottom;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;}
+.xl43
+	{mso-style-parent:style0;
+	text-align:center;
+	vertical-align:bottom;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;}
+.xl44
+	{mso-style-parent:style0;
+	font-size:9.0pt;
+	vertical-align:bottom;
+	white-space:normal;}
+ruby
+	{ruby-align:left;}
+rt
+	{color:windowtext;
+	font-size:6.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"ＭＳ Ｐゴシック", monospace;
+	mso-font-charset:128;
+	mso-char-type:katakana;
+	display:none;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet1</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>270</x:DefaultRowHeight>
+     <x:Selected/>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:ActiveRow>17</x:ActiveRow>
+       <x:ActiveCol>4</x:ActiveCol>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet2</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>270</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet3</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>270</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>9570</x:WindowHeight>
+  <x:WindowWidth>22395</x:WindowWidth>
+  <x:WindowTopX>600</x:WindowTopX>
+  <x:WindowTopY>375</x:WindowTopY>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1035"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body link="blue" vlink="purple">
+
+<table x:str="" border="0" cellpadding="0" cellspacing="0" width="684" style="border-collapse:
+ collapse;table-layout:fixed;width:513pt">
+ <colgroup><col width="155" style="mso-width-source:userset;mso-width-alt:4960;width:116pt">
+ <col width="169" style="mso-width-source:userset;mso-width-alt:5408;width:127pt">
+ <col width="72" span="5" style="width:54pt">
+ </colgroup><tbody><tr height="18" style="height:13.5pt">
+  <td height="18" width="155" style="height:13.5pt;width:116pt"></td>
+  <td width="169" style="width:127pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+ </tr>
+ <tr height="23" style="height:17.25pt">
+  <td height="23" style="height:17.25pt"></td>
+  <td class="xl24"><ruby>研究会<span style="display:none"><rt>ケンキュウカイ</rt></span></ruby>プログラム</td>
+  <td class="xl24"></td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+  <td class="xl25" colspan="2" style="mso-ignore:colspan"><ruby>更新日<span style="display:none"><rt>コウシンビ</rt></span></ruby>　２０１０<ruby>年<span style="display:none"><rt>ネン</rt></span></ruby>１０<ruby>月<span style="display:none"><rt>ガツ</rt></span></ruby>７<ruby>日<span style="display:
+  none"><rt>ニチ</rt></span></ruby></td>
+ </tr>
+ <tr height="19" style="height:14.25pt">
+  <td height="19" colspan="7" style="height:14.25pt;mso-ignore:colspan"></td>
+ </tr>
+ <tr height="18" style="height:13.5pt">
+  <td rowspan="4" height="72" class="xl26" style="border-bottom:.5pt solid black;
+  height:54.0pt">９<ruby>月<span style="display:none"><rt>ガツ</rt></span></ruby>２７<ruby>日<span style="display:none"><rt>ニチ</rt></span></ruby>（<ruby>月<span style="display:
+  none"><rt>ゲツ</rt></span></ruby>）</td>
+  <td class="xl27">１１：００－１２：３０</td>
+  <td class="xl28"><ruby>河本<span style="display:none"><rt>カワモト</rt></span></ruby></td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="18" style="height:13.5pt">
+  <td height="18" class="xl30" style="height:13.5pt">１３：３０－１４：３０</td>
+  <td class="xl31"><ruby>河本<span style="display:none"><rt>カワモト</rt></span></ruby></td>
+  <td></td>
+  <td class="xl32"></td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="18" style="height:13.5pt">
+  <td height="18" class="xl30" style="height:13.5pt">１５：００－１６：３０</td>
+  <td class="xl31"><ruby>鈴木<span style="display:none"><rt>スズキ</rt></span></ruby></td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="18" style="height:13.5pt">
+  <td height="18" class="xl34" style="height:13.5pt">１７：００－１８：００</td>
+  <td class="xl35"><ruby>鈴木<span style="display:none"><rt>スズキ</rt></span></ruby></td>
+  <td></td>
+  <td class="xl32"></td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="18" style="height:13.5pt">
+  <td height="18" class="xl36" style="height:13.5pt">　</td>
+  <td class="xl37">　</td>
+  <td class="xl38">　</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="18" style="height:13.5pt">
+  <td rowspan="5" height="90" class="xl39" style="border-bottom:.5pt solid black;
+  height:67.5pt;border-top:none">９月２８<ruby>日<span style="display:none"><rt>ニチ</rt></span></ruby>（<ruby>火<span style="display:none"><rt>カ</rt></span></ruby>）</td>
+  <td class="xl30">９：３０－１１：００</td>
+  <td class="xl31"><ruby>西村<span style="display:none"><rt>ニシムラ</rt></span></ruby></td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="18" style="height:13.5pt">
+  <td height="18" class="xl30" style="height:13.5pt">１１：３０－１２：３０</td>
+  <td class="xl31"><ruby>西村<span style="display:none"><rt>ニシムラ</rt></span></ruby></td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="18" style="height:13.5pt">
+  <td height="18" class="xl30" style="height:13.5pt">１３：３０－１５：００</td>
+  <td class="xl31"><ruby>土<span style="display:none"><rt>ツチ</rt></span></ruby><ruby>屋<span style="display:none"><rt>ヤ</rt></span></ruby></td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="18" style="height:13.5pt">
+  <td height="18" class="xl30" style="height:13.5pt">１５：３０－１６：３０</td>
+  <td class="xl31"><ruby>土<span style="display:none"><rt>ツチ</rt></span></ruby><ruby>屋<span style="display:none"><rt>ヤ</rt></span></ruby></td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="18" style="height:13.5pt">
+  <td height="18" class="xl34" style="height:13.5pt">１７：００－１８：１５</td>
+  <td class="xl31">伊敷</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="18" style="height:13.5pt">
+  <td height="18" class="xl36" style="height:13.5pt">　</td>
+  <td class="xl37">　</td>
+  <td class="xl31">　</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="18" style="height:13.5pt">
+  <td rowspan="5" height="90" class="xl39" style="border-bottom:.5pt solid black;
+  height:67.5pt;border-top:none">９月２９<ruby>日<span style="display:none"><rt>ニチ</rt></span></ruby>（<ruby>水<span style="display:none"><rt>スイ</rt></span></ruby>）</td>
+  <td class="xl30">９：３０－１１：００</td>
+  <td class="xl31"><ruby>笹倉<span style="display:none"><rt>ササクラ</rt></span></ruby></td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="18" style="height:13.5pt">
+  <td height="18" class="xl30" style="height:13.5pt">１１：３０－１２：３０</td>
+  <td class="xl31"><ruby>笹倉<span style="display:none"><rt>ササクラ</rt></span></ruby></td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="18" style="height:13.5pt">
+  <td height="18" class="xl30" style="height:13.5pt">１３：３０－１５：００</td>
+  <td class="xl31"><ruby>藤<span style="display:none"><rt>フジ</rt></span></ruby></td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="18" style="height:13.5pt">
+  <td height="18" class="xl30" style="height:13.5pt">１５：３０－１６：３０</td>
+  <td class="xl31"><ruby>佐藤<span style="display:none"><rt>サトウ</rt></span></ruby></td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="18" style="height:13.5pt">
+  <td height="18" class="xl34" style="height:13.5pt">１７：００－１８：１５</td>
+  <td class="xl35"><ruby>松居<span style="display:none"><rt>マツイ</rt></span></ruby></td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="18" style="height:13.5pt">
+  <td height="18" class="xl36" style="height:13.5pt">　</td>
+  <td class="xl40">　</td>
+  <td class="xl38">　</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="18" style="height:13.5pt">
+  <td rowspan="5" height="90" class="xl39" style="border-bottom:.5pt solid black;
+  height:67.5pt;border-top:none">９月３０<ruby>日<span style="display:none"><rt>ニチ</rt></span></ruby>（<ruby>木<span style="display:none"><rt>モク</rt></span></ruby>）</td>
+  <td class="xl30">９：３０－１１：００</td>
+  <td class="xl31"><ruby>綿<span style="display:none"><rt>ワタ</rt></span></ruby><ruby>村<span style="display:none"><rt>ムラ</rt></span></ruby></td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="18" style="height:13.5pt">
+  <td height="18" class="xl30" style="height:13.5pt">１１：３０－１２：３０</td>
+  <td class="xl31"><ruby>綿<span style="display:none"><rt>ワタ</rt></span></ruby><ruby>村<span style="display:none"><rt>ムラ</rt></span></ruby></td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="18" style="height:13.5pt">
+  <td height="18" class="xl30" style="height:13.5pt">１３：３０－１５：００</td>
+  <td class="xl31"><ruby>淺川<span style="display:none"><rt>アサカワ</rt></span></ruby></td>
+  <td></td>
+  <td height="18" width="72" style="height:13.5pt;width:54pt"><!--[if gte vml 1]><v:shapetype
+   id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+   path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas>
+    <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+    <v:f eqn="sum @0 1 0"/>
+    <v:f eqn="sum 0 0 @1"/>
+    <v:f eqn="prod @2 1 2"/>
+    <v:f eqn="prod @3 21600 pixelWidth"/>
+    <v:f eqn="prod @3 21600 pixelHeight"/>
+    <v:f eqn="sum @0 0 1"/>
+    <v:f eqn="prod @6 1 2"/>
+    <v:f eqn="prod @7 21600 pixelWidth"/>
+    <v:f eqn="sum @8 21600 0"/>
+    <v:f eqn="prod @7 21600 pixelHeight"/>
+    <v:f eqn="sum @10 21600 0"/>
+   </v:formulas>
+   <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+   <o:lock v:ext="edit" aspectratio="t"/>
+  </v:shapetype><v:shape id="_x0000_s1025" type="#_x0000_t75" alt="" style='position:absolute;
+   margin-left:0;margin-top:0;width:7.5pt;height:.75pt;z-index:1'>
+   <x:ClientData ObjectType="Pict">
+    <x:SizeWithCells/>
+    <x:CF>Bitmap</x:CF>
+    <x:AutoPict/>
+   </x:ClientData>
+  </v:shape><v:shape id="_x0000_s1026" type="#_x0000_t75" alt="" style='position:absolute;
+   margin-left:0;margin-top:0;width:7.5pt;height:.75pt;z-index:2'>
+   <x:ClientData ObjectType="Pict">
+    <x:SizeWithCells/>
+    <x:CF>Bitmap</x:CF>
+    <x:AutoPict/>
+   </x:ClientData>
+  </v:shape><![endif]--><!--[if !vml]--><span style="mso-ignore:vglayout">
+  <table cellpadding="0" cellspacing="0">
+   <tbody><tr>
+    <td width="0" height="0"></td>
+   </tr>
+   <tr>
+    <td></td>
+    <td><img width="10" height="1" src="program1.files/image001.gif" v:shapes="_x0000_s1025 _x0000_s1026"></td>
+    <td width="62"></td>
+   </tr>
+   <tr>
+    <td height="17"></td>
+   </tr>
+  </tbody></table>
+  </span><!--[endif]--><!--[if !mso & vml]><span style='width:54.0pt;height:13.5pt'></span><![endif]--></td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="18" style="height:13.5pt">
+  <td height="18" class="xl30" style="height:13.5pt">１５：３０－１６：３０</td>
+  <td class="xl31"><ruby>淺川<span style="display:none"><rt>アサカワ</rt></span></ruby></td>
+  <td></td>
+  <td height="18" width="72" style="height:13.5pt;width:54pt"><!--[if gte vml 1]><v:shape
+   id="_x0000_s1027" type="#_x0000_t75" alt="" style='position:absolute;
+   margin-left:0;margin-top:0;width:7.5pt;height:.75pt;z-index:3'>
+   <x:ClientData ObjectType="Pict">
+    <x:SizeWithCells/>
+    <x:CF>Bitmap</x:CF>
+    <x:AutoPict/>
+   </x:ClientData>
+  </v:shape><v:shape id="_x0000_s1028" type="#_x0000_t75" alt="" style='position:absolute;
+   margin-left:0;margin-top:0;width:7.5pt;height:.75pt;z-index:4'>
+   <x:ClientData ObjectType="Pict">
+    <x:SizeWithCells/>
+    <x:CF>Bitmap</x:CF>
+    <x:AutoPict/>
+   </x:ClientData>
+  </v:shape><v:shape id="_x0000_s1029" type="#_x0000_t75" alt="" style='position:absolute;
+   margin-left:0;margin-top:0;width:7.5pt;height:.75pt;z-index:5'>
+   <x:ClientData ObjectType="Pict">
+    <x:SizeWithCells/>
+    <x:CF>Bitmap</x:CF>
+    <x:AutoPict/>
+   </x:ClientData>
+  </v:shape><v:shape id="_x0000_s1030" type="#_x0000_t75" alt="" style='position:absolute;
+   margin-left:0;margin-top:0;width:7.5pt;height:.75pt;z-index:6'>
+   <x:ClientData ObjectType="Pict">
+    <x:SizeWithCells/>
+    <x:CF>Bitmap</x:CF>
+    <x:AutoPict/>
+   </x:ClientData>
+  </v:shape><v:shape id="_x0000_s1031" type="#_x0000_t75" alt="" style='position:absolute;
+   margin-left:0;margin-top:0;width:7.5pt;height:.75pt;z-index:7'>
+   <x:ClientData ObjectType="Pict">
+    <x:SizeWithCells/>
+    <x:CF>Bitmap</x:CF>
+    <x:AutoPict/>
+   </x:ClientData>
+  </v:shape><v:shape id="_x0000_s1032" type="#_x0000_t75" alt="" style='position:absolute;
+   margin-left:0;margin-top:0;width:7.5pt;height:.75pt;z-index:8'>
+   <x:ClientData ObjectType="Pict">
+    <x:SizeWithCells/>
+    <x:CF>Bitmap</x:CF>
+    <x:AutoPict/>
+   </x:ClientData>
+  </v:shape><![endif]--><!--[if !vml]--><span style="mso-ignore:vglayout">
+  <table cellpadding="0" cellspacing="0">
+   <tbody><tr>
+    <td width="0" height="0"></td>
+   </tr>
+   <tr>
+    <td></td>
+    <td><img width="10" height="1" src="program1.files/image001.gif" v:shapes="_x0000_s1027 _x0000_s1028 _x0000_s1029 _x0000_s1030 _x0000_s1031 _x0000_s1032"></td>
+    <td width="62"></td>
+   </tr>
+   <tr>
+    <td height="17"></td>
+   </tr>
+  </tbody></table>
+  </span><!--[endif]--><!--[if !mso & vml]><span style='width:54.0pt;height:13.5pt'></span><![endif]--></td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="18" style="height:13.5pt">
+  <td height="18" class="xl34" style="height:13.5pt">１７：００－１８：１５</td>
+  <td class="xl35"><ruby>瀧<span style="display:none"><rt>タキ</rt></span></ruby><ruby>見<span style="display:none"><rt>ミ</rt></span></ruby></td>
+  <td></td>
+  <td height="18" width="72" style="height:13.5pt;width:54pt"><!--[if gte vml 1]><v:shape
+   id="_x0000_s1033" type="#_x0000_t75" alt="" style='position:absolute;
+   margin-left:0;margin-top:0;width:7.5pt;height:.75pt;z-index:9'>
+   <x:ClientData ObjectType="Pict">
+    <x:SizeWithCells/>
+    <x:CF>Bitmap</x:CF>
+    <x:AutoPict/>
+   </x:ClientData>
+  </v:shape><v:shape id="_x0000_s1034" type="#_x0000_t75" alt="" style='position:absolute;
+   margin-left:0;margin-top:0;width:7.5pt;height:.75pt;z-index:10'>
+   <x:ClientData ObjectType="Pict">
+    <x:SizeWithCells/>
+    <x:CF>Bitmap</x:CF>
+    <x:AutoPict/>
+   </x:ClientData>
+  </v:shape><![endif]--><!--[if !vml]--><span style="mso-ignore:vglayout">
+  <table cellpadding="0" cellspacing="0">
+   <tbody><tr>
+    <td width="0" height="0"></td>
+   </tr>
+   <tr>
+    <td></td>
+    <td><img width="10" height="1" src="program1.files/image001.gif" v:shapes="_x0000_s1033 _x0000_s1034"></td>
+    <td width="62"></td>
+   </tr>
+   <tr>
+    <td height="17"></td>
+   </tr>
+  </tbody></table>
+  </span><!--[endif]--><!--[if !mso & vml]><span style='width:54.0pt;height:13.5pt'></span><![endif]--></td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="18" style="height:13.5pt">
+  <td height="18" class="xl36" style="height:13.5pt">　</td>
+  <td class="xl37">　</td>
+  <td class="xl38">　</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="18" style="height:13.5pt">
+  <td rowspan="3" height="55" class="xl39" style="border-bottom:1.0pt solid black;
+  height:41.25pt;border-top:none">１０月１<ruby>日<span style="display:none"><rt>ニチ</rt></span></ruby>（<ruby>金<span style="display:none"><rt>キン</rt></span></ruby>）</td>
+  <td class="xl30">９：３０－１１：００</td>
+  <td class="xl31"><ruby>綿引<span style="display:none"><rt>ワタビキ</rt></span></ruby></td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="18" style="height:13.5pt">
+  <td height="18" class="xl30" style="height:13.5pt">１１：３０－１２：３０</td>
+  <td class="xl31"><ruby>綿引<span style="display:none"><rt>ワタビキ</rt></span></ruby></td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.25pt">
+  <td height="19" class="xl42" style="height:14.25pt">１３：３０－１５：００</td>
+  <td class="xl43"><ruby>未定<span style="display:none"><rt>ミテイ</rt></span></ruby></td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="18" style="height:13.5pt">
+  <td height="18" colspan="3" style="height:13.5pt;mso-ignore:colspan"></td>
+  <td class="xl44"></td>
+  <td colspan="3" style="mso-ignore:colspan"></td>
+ </tr>
+ <!--[if supportMisalignedColumns]-->
+ <tr height="0" style="display:none">
+  <td width="155" style="width:116pt"></td>
+  <td width="169" style="width:127pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+ </tr>
+ <!--[endif]-->
+</tbody></table>
+
+
+
+
+</body></html>    ( > \ k � � � � � �                           _
