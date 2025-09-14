@@ -87,17 +87,17 @@ main.container {
 main.container > section { margin: 0; }
 
 /* Blue card */
-.about {
+.about,
+.past-meetings,
+.organizers {
   background-color: #f0f4f8;
-  padding: 1em 1em;            /* inner spacing of the blue card */
+  padding: 1em 1em;      /* inner spacing of the blue card */
   border-radius: 8px;
-  overflow: hidden;            /* prevent first-child margin from escaping */
+  overflow: hidden;      /* prevent first-child margin from escaping */
 }
 
 h1, h2 { margin-top: 0; }      /* keep headings flush to card top */
-.past-meetings h2,.organizers h2 {
-  margin-top: 1.5em; /* Adjust spacing above headings */
-}
+
 
 /* Optional card style */
 .card {
